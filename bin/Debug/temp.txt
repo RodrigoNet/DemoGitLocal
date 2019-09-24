@@ -1,0 +1,30 @@
+﻿Update param_gen set valor_param ='131313'  where nombre_param='Acteco' 
+GO
+Update param_gen set valor_param ='C'  where nombre_param='Ambiente' 
+GO
+Update param_gen set valor_param ='CIUDAD'  where nombre_param='CiudadOrigen' 
+GO
+Update param_gen set valor_param ='1234'  where nombre_param='Clave_Cert' 
+GO
+Update param_gen set valor_param ='COMUNA'  where nombre_param='CmnaOrigen' 
+GO
+Update param_gen set valor_param ='email empresa'  where nombre_param='CuentaCorreo' 
+GO
+Update param_gen set valor_param ='DIRECCION DEMO 2345'  where nombre_param='DirOrigen' 
+GO
+Update param_gen set valor_param ='email empresa'  where nombre_param='Email_empresa' 
+GO
+Update param_gen set valor_param ='2012-09-09'  where nombre_param='FchResol' 
+GO
+Update param_gen set valor_param ='GIRO GIRO'  where nombre_param='Giro' 
+GO
+Update param_gen set valor_param ='0'  where nombre_param='NroResol' 
+GO
+Update param_gen set valor_param ='1-9'  where nombre_param='RUTCert' 
+GO
+Update param_gen set valor_param ='1-9'  where nombre_param='RUTEmpresa' 
+GO
+Update param_gen set valor_param ='PRUEBA'  where nombre_param='RznSoc' 
+GO
+Update param_gen set valor_param ='12344'  where nombre_param='Telefonos' 
+GO

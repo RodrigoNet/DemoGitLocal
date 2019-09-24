@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C5A4205-5881-4A48-9DB8-CFFD7C91612A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemaDte.My.MyApplication</StartupObject>
+    <RootNamespace>SistemaDte</RootNamespace>
+    <AssemblyName>SistemaDte</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemaDte.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemaDte.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2015.3.1104.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.3.1104.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2015.3.1104.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2015.3.1104.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2015.3.1104.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archivos_TXT.vb" />
+    <Compile Include="BC\RUTman.vb" />
+    <Compile Include="BE\Clientes.vb" />
+    <Compile Include="BE\Facturas.vb" />
+    <Compile Include="BE\F_Pago.vb" />
+    <Compile Include="BE\Productos.vb" />
+    <Compile Include="BE\Sucursal.vb" />
+    <Compile Include="BE\Usuarios.vb" />
+    <Compile Include="BuscarClientes.Designer.vb">
+      <DependentUpon>BuscarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProducto.Designer.vb">
+      <DependentUpon>BuscarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlFolios.Designer.vb">
+      <DependentUpon>ControlFolios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlFolios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAC\Clientes.vb" />
+    <Compile Include="DAC\F_Pago.vb" />
+    <Compile Include="DAC\myhelper3.vb" />
+    <Compile Include="DAC\myMSSQL.vb" />
+    <Compile Include="DAC\Productos.vb" />
+    <Compile Include="DAC\runnerScript.vb" />
+    <Compile Include="DAC\Sucursal.vb" />
+    <Compile Include="DAC\Usuarios.vb" />
+    <Compile Include="DAC\Util.vb" />
+    <Compile Include="DTESISTEMDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTESISTEMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTESISTEMDataSet.vb">
+      <DependentUpon>DTESISTEMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estaciones.Designer.vb">
+      <DependentUpon>Estaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas.Designer.vb">
+      <DependentUpon>Facturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Pago.Designer.vb">
+      <DependentUpon>F_Pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_Pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Paramgral.Designer.vb">
+      <DependentUpon>Paramgral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paramgral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor.Designer.vb">
+      <DependentUpon>Proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roles.Designer.vb">
+      <DependentUpon>Roles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sucursal.Designer.vb">
+      <DependentUpon>Sucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB_Usuario.Designer.vb">
+      <DependentUpon>TB_Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TB_Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.vb">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuscarClientes.resx">
+      <DependentUpon>BuscarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProducto.resx">
+      <DependentUpon>BuscarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlFolios.resx">
+      <DependentUpon>ControlFolios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estaciones.resx">
+      <DependentUpon>Estaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas.resx">
+      <DependentUpon>Facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Pago.resx">
+      <DependentUpon>F_Pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paramgral.resx">
+      <DependentUpon>Paramgral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor.resx">
+      <DependentUpon>Proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roles.resx">
+      <DependentUpon>Roles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sucursal.resx">
+      <DependentUpon>Sucursal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB_Usuario.resx">
+      <DependentUpon>TB_Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DTESISTEMDataSet.xsc">
+      <DependentUpon>DTESISTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DTESISTEMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DTESISTEMDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTESISTEMDataSet.xss">
+      <DependentUpon>DTESISTEMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\form_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\form_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\id_cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\product2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\pawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\gears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\find2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\add2_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\disk_blue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\Notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
